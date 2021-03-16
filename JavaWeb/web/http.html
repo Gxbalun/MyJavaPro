@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <script>
+        function test(){
+            location.assign("demo2Servlet")
+        }
+    </script>
+<body>
+    <!--
+        在浏览器网页中，向服务器端发送的都称为http请求
+        一个http请求包含请求行，请求头，请求体
+
+        常见的http请求有两种：
+        get方式请求：
+            超链接
+            浏览器地址直接输入地址访问
+            在js中loction.replace()   assign()    reload()
+            <form action="" method="get"></form>
+        post方式请求：
+            <form action="" method="post"></form>表单post方式提交
+
+            get方式与post方式区别
+                get：主要是从服务器端获取数据，也可以发送少量数据
+                    get方式请求的数据在地址中拼接，会在浏览器地址显示，相对来说不安全，大小也会受到浏览器的限制
+                post：主要是向服务器发送数据(例如提交表单)
+                    post方式请求数据在请求体中，不在地址栏显示，相对安全，大小不受限制(通过post当时上传文件)
+    -->
+    <a href="demo2Servlet?id=123456">demo2Servlet</a>
+    <input type="button" value="测试" onclick="test()">
+    <form action="demo2Servlet" method="get">
+        <input type="text" name="account" value="">
+        <input type="submit" name="提交">
+    </form>
+
+    <!--post方式-->
+    <form action="demo2Servlet" method="post">
+        <input type="text" name="account" value="">
+        <input type="submit" name="提交">
+    </form>
+</body>
+</html>

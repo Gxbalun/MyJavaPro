@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="work1Servlet" method="post">
+        <input type="text" name="Text" value=""><br/>
+        <input type="password" name="Pass" value=""><br/>
+        <!--单选-->
+        <input type="radio" id="man" name="Sex" value="Man" checked="checked"><label for="man">男</label>
+        <input type="radio" id="woman" name="Sex" value="Woman"><label for="woman">女</label><br/>
+        <!--复选-->
+        <input type="checkbox" id="daima" name="Habit" value="103"/><label for="daima">敲代码</label>
+        <input type="checkbox" id="game" name="Habit" value="104"/><label for="game">打游戏</label>
+        <input type="checkbox" id="song" name="Habit" value="105"/><label for="song">唱歌</label>
+        <input type="checkbox" id="sport" name="Habit" value="106"/><label for="sport">运动</label><br/>
+        <!--下拉框-->
+        <select name="Occupation">
+            <option value="99" >请选择</option>
+            <option value="100">医生</option>
+            <option value="101">工人</option>
+            <option value="102">司机</option>
+        </select><br/>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
