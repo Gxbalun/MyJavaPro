@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE users SYSTEM "D:\Study\JAVA补习\代码\QWebPro\src\TestDemo\xmldemo\user.dtd">
+<users>
+    <user>
+        <name></name>
+        <age></age>
+        <address></address>
+    </user>
+</users>
